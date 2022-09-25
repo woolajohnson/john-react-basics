@@ -1,0 +1,48 @@
+.mainSection {
+    display: grid;
+    width: 90vw;
+    max-width: 1170px;
+    margin: 40px auto;
+    gap: 40px;
+}
+
+@media screen and (min-width: 600px) {
+    .mainSection {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+
+@media screen and (min-width: 728px) {
+    .mainSection {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+}
+
+@media screen and (min-width: 1120px) {
+    .mainSection {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+}
+
+.bookSection {
+    background-color: #fff;
+    padding: 20px 30px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.bookSection img {
+    max-width: 170px;
+    max-height: 240px;
+}
+
+.bookSection h2 {
+    color: #333;
+}
+
+.bookSection h5 {
+    color: skyblue;
+}
